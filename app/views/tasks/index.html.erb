@@ -1,0 +1,18 @@
+<h1>List all the tasks</h1>
+
+<%= link_to 'new', new_path(@tasks) %>
+  <% @tasks.each do |task| %>
+  <div class="container">
+    <% task.completed %>
+    <% if task.completed == true %>
+    <%= "✔" %>
+    <% else %>
+    <%= "◽"  %>
+    <% end %>
+    <h3><%= link_to task.title, task_path(task) %></h3>
+
+    <%= link_to '🗑', delete_path(task), method: :delete %>
+  </div>
+<% end %>
+<br>
+<br>
