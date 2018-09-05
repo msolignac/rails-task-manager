@@ -4,9 +4,11 @@
 .container {
   display: flex;
   align-items: center;
-  margin: 10px;
   justify-content: space-between;
   width: 300px;
+  background-color: #eff0f4;
+  font-family: Helvetica;
+  padding: 15px;
 }
 
 
@@ -15,3 +17,20 @@
   color: red;
 }
 
+.task a {
+  text-decoration: none;
+  border: solid 1px gray;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  color: white;
+  background-color: #606470;
+  padding: 10px 14px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-family: Helvetica;
+  text-align: center;
+}

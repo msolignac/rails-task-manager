@@ -1,6 +1,7 @@
-<h1>List all the tasks</h1>
-
-<%= link_to 'new', new_path(@tasks) %>
+<h1>Your tasks</h1>
+<div class="task">
+  <%= link_to 'New Task', new_path(@tasks) %>
+</div>
   <% @tasks.each do |task| %>
   <div class="container">
     <% task.completed %>
